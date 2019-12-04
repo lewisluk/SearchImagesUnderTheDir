@@ -5,8 +5,7 @@ def get_image_path(path:str, result_path:list)->list:
 
     for item in items:
         current_item_path = os.path.join(path, item)
-        if '压缩后' in current_item_path:
-            continue
+
         if item.endswith('jpg') or item.endswith('JPG'):
             result_path.append(current_item_path)
         else:
